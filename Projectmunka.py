@@ -107,3 +107,14 @@ pen.hideturtle()
 pen.goto(0, 260)
 pen.write("Player A: 0  Player B: 0", align="center", font=("Courier", 24, "normal"))
 >>>>>>> 13c459e984ebde2cf72b0ffedf706bbeaa9ef3b6
+
+# A labda és az ütő ütközései
+    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
+        ball.setx(340)
+        ball.dx *= -1
+        os.system("afplay bounce.wav&")
+
+    if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() -40):
+        ball.setx(-340)
+        ball.dx *= -1
+        os.system("afplay bounce.wav&")
