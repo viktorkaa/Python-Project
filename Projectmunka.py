@@ -1,0 +1,1 @@
+print("majd itt lesz valami")
