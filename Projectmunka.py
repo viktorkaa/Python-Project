@@ -36,6 +36,7 @@ ball.penup()
 ball.goto(0, 0)
 ball.dx = 2
 ball.dy = -2
+<<<<<<< HEAD
 
 # Funkciók 
 def paddle_a_up():
@@ -64,3 +65,13 @@ wn.onkeypress(paddle_a_up, "w")
 wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
+=======
+# Toll
+pen = turtle.Turtle()
+pen.speed(0)
+pen.color("white")
+pen.penup()
+pen.hideturtle()
+pen.goto(0, 260)
+pen.write("Player A: 0  Player B: 0", align="center", font=("Courier", 24, "normal"))
+>>>>>>> 13c459e984ebde2cf72b0ffedf706bbeaa9ef3b6
